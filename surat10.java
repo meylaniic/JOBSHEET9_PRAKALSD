@@ -16,7 +16,4 @@ public class surat10 {
         this.durasi = durasi;
     }
 
-    void jenisizin(){
-        
-    }
 }

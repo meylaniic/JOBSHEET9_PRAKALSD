@@ -11,7 +11,7 @@ public class suratdemo10 {
             System.out.println("1. Terima Surat Izin");
             System.out.println("2. Proses Surat Izin");
             System.out.println("3. Lihat Surat Izin Terakhir");
-            System.out.println("4. Cari Surat Izin");
+            System.out.println("4. Cari Surat Izin Berdasarkan Nama");
             System.out.print("Pilih menu : ");
             pilih= scan.nextInt();
             scan.nextLine();
@@ -27,6 +27,7 @@ public class suratdemo10 {
                 char jenis = scan.nextLine().charAt(0);
                 System.out.print("Durasi (hari): ");
                 int durasi = scan.nextInt(); scan.nextLine();
+
                 surat10 surat = new surat10(id, nama, kelas, jenis, durasi);
                 stack.push(surat);
                 break;
@@ -35,8 +36,11 @@ public class suratdemo10 {
                 surat10 diproses = stack.pop();
                 if (diproses != null) {
                     System.out.println("Memproses surat dari: " + diproses.namamahasiswa);
+                    System.out.println("Jenis Izin : " + diproses.jenizizin);
+                    System.out.println("Durasi : " + diproses.durasi);
                 }
                 break;
+                
                 case 3:
                 surat10 terakhir = stack.peek();
                     if (terakhir != null) {

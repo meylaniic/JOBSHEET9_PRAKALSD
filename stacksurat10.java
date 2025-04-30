@@ -65,7 +65,7 @@ public class stacksurat10 {
             }
         }
         if (!ditemukan) {
-            System.out.println("Tidak didtemukan surat atas nama " +nama);
+            System.out.println("Tidak ditemukan surat atas nama " +nama);
         }
     }
 
